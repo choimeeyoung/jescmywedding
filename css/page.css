@@ -70,6 +70,8 @@
 }
 #way_to_come .map{
     margin-bottom:5px;
+    height: 300px;
+    overflow: hidden;
 }
 #way_to_come .map_link{
     width:100%;
@@ -93,6 +95,7 @@
     text-align: left;
     color: #443D3D;
     margin-bottom:25px;
+    line-height: 25px;
 }
 
 #way_to_come .wrap .address span{

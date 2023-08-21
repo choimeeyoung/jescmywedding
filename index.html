@@ -108,12 +108,36 @@
         <section id="way_to_come">
             <h2>오시는 길</h2>
             <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.7436628167816!2d126.7215912252018!3d37.49037502849269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c459b1f5cfd%3A0x6d18a58dfe751124!2z67aA7Y-J7LGE7JuQ7Juo65Sp7ZmA!5e0!3m2!1sko!2skr!4v1692101615510!5m2!1sko!2skr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1692618655313" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                <!--
+                    2. 설치 스크립트
+                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                    let temp = $('article').width() - 20;
+                    $(window).resize(() => {
+                        temp = $('article').width() - 20
+                    })
+
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1692618655313",
+                        "key" : "2fwko",
+                        "mapWidth" : temp,
+                        "mapHeight" : "300"
+                    }).render();
+                </script>
             </div>
-            <span class="map_link"><a href="https://goo.gl/maps/f1Edv91XMpdpfaZm7">지도 바로가기</a></span>
+            <span class="map_link"><a href="http://kko.to/PKgEDYw8y7">지도 바로가기</a></span>
             <div class="wrap">
                 <p class="address">
                     인천 부평구 경원대로 1404(부평동 185-30)<br/>
+                    빌라드마리 (구: 부평 채원웨딩홀)<br/>
                     <span>1404 Gyeongwon-daero, Bupyeong-gu, Incheon</span>
                 </p>
                 <p class="reception">
