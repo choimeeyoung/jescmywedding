@@ -84,6 +84,7 @@
     background:#ededed;
     font-weight: bold;
     margin-bottom:20px;
+    cursor: pointer;
 }
 
 #way_to_come .wrap{
@@ -169,6 +170,7 @@
     float: left;
     margin-right: 10px;
     margin-bottom:10px;
+    cursor: pointer;
 }
 #photo li:nth-child(3n){
     margin-right: 0;
@@ -218,6 +220,7 @@
     position: fixed;
     max-width: 420px;
     display: none;
+    z-index: 100000;
 }
 #popup .img_show span{
     position: absolute;
@@ -225,7 +228,8 @@
     right:-25px;
     width: 20px;
     display: inline-block;
-    filter: invert(100%) sepia(86%) saturate(0%) hue-rotate(255deg) brightness(104%) contrast(101%);;
+    filter: invert(100%) sepia(86%) saturate(0%) hue-rotate(255deg) brightness(104%) contrast(101%);
+    cursor: pointer;
 }
 #popup .img_show {
     width: 80%;
@@ -285,7 +289,7 @@
     position: absolute;
     top:14px;
     right: 15px;
-
+    cursor: pointer;
 }
 
 #tel .tel_common p{
